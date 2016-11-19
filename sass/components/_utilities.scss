@@ -1,0 +1,414 @@
+// Fluid Video
+  .arve-wrapper {
+    box-shadow: rgba(0,0,0,0.33) 0px 6px 4px -2px;
+  }
+
+// Background Colors
+  .bg-teal { background: $teal; }
+  .bg-teal2 { background: $teal2; }
+
+// Text Colors
+  .text-white { color: white; }
+  .text-coal { color: #3a3a3a; }
+  .text-teal { color: $teal; }
+  .text-teal2 { color: $teal2; }
+
+// Text Align
+  .text-center {
+    text-align: center;
+  }
+
+// Padding & Margin
+  // Extra Small
+  .xs-pt0 { padding-top: 0px; }
+  .xs-pb0 { padding-bottom: 0px; }
+  .xs-pl0 { padding-left: 0px; }
+  .xs-pr0 { padding-right: 0px; }
+  .xs-pv0 { @extend .xs-pt0; @extend .xs-pb0; }
+  .xs-ph0 { @extend .xs-pl0; @extend .xs-pr0; }
+  .xs-pa0 { @extend .xs-pv0; @extend .xs-ph0; }
+
+  .xs-ptsm { padding-top: $sm; }
+  .xs-pbsm { padding-bottom: $sm; }
+  .xs-plsm { padding-left: $sm; }
+  .xs-prsm { padding-right: $sm; }
+  .xs-pvsm { @extend .xs-ptsm; @extend .xs-pbsm; }
+  .xs-phsm { @extend .xs-plsm; @extend .xs-prsm; }
+  .xs-pasm { @extend .xs-pvsm; @extend .xs-phsm; }
+
+  .xs-ptmd { padding-top: $md; }
+  .xs-pbmd { padding-bottom: $md; }
+  .xs-plmd { padding-left: $md; }
+  .xs-prmd { padding-right: $md; }
+  .xs-pvmd { @extend .xs-ptmd; @extend .xs-pbmd; }
+  .xs-phmd { @extend .xs-plmd; @extend .xs-prmd; }
+  .xs-pamd { @extend .xs-pvmd; @extend .xs-phmd; }
+
+  .xs-ptlg { padding-top: $lg; }
+  .xs-pblg { padding-bottom: $lg; }
+  .xs-pllg { padding-left: $lg; }
+  .xs-prlg { padding-right: $lg; }
+  .xs-pvlg { @extend .xs-ptlg; @extend .xs-pblg; }
+  .xs-phlg { @extend .xs-pllg; @extend .xs-prlg; }
+  .xs-palg { @extend .xs-pvlg; @extend .xs-phlg; }
+
+  .xs-ptxl { padding-top: $xl; }
+  .xs-pbxl { padding-bottom: $xl; }
+  .xs-plxl { padding-left: $xl; }
+  .xs-prxl { padding-right: $xl; }
+  .xs-pvxl { @extend .xs-ptxl; @extend .xs-pbxl; }
+  .xs-phxl { @extend .xs-plxl; @extend .xs-prxl; }
+  .xs-paxl { @extend .xs-pvxl; @extend .xs-phxl; }
+
+  .xs-ptxxl { padding-top: $xxl; }
+  .xs-pbxxl { padding-bottom: $xxl; }
+  .xs-plxxl { padding-left: $xxl; }
+  .xs-prxxl { padding-right: $xxl; }
+  .xs-pvxxl { @extend .xs-ptxxl; @extend .xs-pbxxl; }
+  .xs-phxxl { @extend .xs-plxxl; @extend .xs-prxxl; }
+  .xs-paxxl { @extend .xs-pvxxl; @extend .xs-phxxl; }
+
+  .xs-mt0 { margin-top: 0px; }
+  .xs-mb0 { margin-bottom: 0px; }
+  .xs-ml0 { margin-left: 0px; }
+  .xs-mr0 { margin-right: 0px; }
+  .xs-mv0 { @extend .xs-mt0; @extend .xs-mb0; }
+  .xs-mh0 { @extend .xs-ml0; @extend .xs-mr0; }
+  .xs-ma0 { @extend .xs-mv0; @extend .xs-mh0; }
+
+  .xs-mtsm { margin-top: $sm; }
+  .xs-mbsm { margin-bottom: $sm; }
+  .xs-mlsm { margin-left: $sm; }
+  .xs-mrsm { margin-right: $sm; }
+  .xs-mvsm { @extend .xs-mtsm; @extend .xs-mbsm; }
+  .xs-mhsm { @extend .xs-mlsm; @extend .xs-mrsm; }
+  .xs-masm { @extend .xs-mvsm; @extend .xs-mhsm; }
+
+  .xs-mtmd { margin-top: $md; }
+  .xs-mbmd { margin-bottom: $md; }
+  .xs-mlmd { margin-left: $md; }
+  .xs-mrmd { margin-right: $md; }
+  .xs-mvmd { @extend .xs-mtmd; @extend .xs-mbmd; }
+  .xs-mhmd { @extend .xs-mlmd; @extend .xs-mrmd; }
+  .xs-mamd { @extend .xs-mvmd; @extend .xs-mhmd; }
+
+  .xs-mtlg { margin-top: $lg; }
+  .xs-mblg { margin-bottom: $lg; }
+  .xs-mllg { margin-left: $lg; }
+  .xs-mrlg { margin-right: $lg; }
+  .xs-mvlg { @extend .xs-mtlg; @extend .xs-mblg; }
+  .xs-mhlg { @extend .xs-mllg; @extend .xs-mrlg; }
+  .xs-malg { @extend .xs-mvlg; @extend .xs-mhlg; }
+
+  .xs-mtxl { margin-top: $xl; }
+  .xs-mbxl { margin-bottom: $xl; }
+  .xs-mlxl { margin-left: $xl; }
+  .xs-mrxl { margin-right: $xl; }
+  .xs-mvxl { @extend .xs-mtxl; @extend .xs-mbxl; }
+  .xs-mhxl { @extend .xs-mlxl; @extend .xs-mrxl; }
+  .xs-maxl { @extend .xs-mvxl; @extend .xs-mhxl; }
+
+  .xs-mtxxl { margin-top: $xxl; }
+  .xs-mbxxl { margin-bottom: $xxl; }
+  .xs-mlxxl { margin-left: $xxl; }
+  .xs-mrxxl { margin-right: $xxl; }
+  .xs-mvxxl { @extend .xs-mtxxl; @extend .xs-mbxxl; }
+  .xs-mhxxl { @extend .xs-mlxxl; @extend .xs-mrxxl; }
+  .xs-maxxl { @extend .xs-mvxxl; @extend .xs-mhxxl; }
+
+  // Small Screen Sizes
+  @media (min-width: $screen-sm-min) {
+    .sm-pt0 { padding-top: 0px; }
+    .sm-pb0 { padding-bottom: 0px; }
+    .sm-pl0 { padding-left: 0px; }
+    .sm-pr0 { padding-right: 0px; }
+    .sm-pv0 { @extend .sm-pt0; @extend .sm-pb0; }
+    .sm-ph0 { @extend .sm-pl0; @extend .sm-pr0; }
+    .sm-pa0 { @extend .sm-pv0; @extend .sm-ph0; }
+
+    .sm-ptsm { padding-top: $sm; }
+    .sm-pbsm { padding-bottom: $sm; }
+    .sm-plsm { padding-left: $sm; }
+    .sm-prsm { padding-right: $sm; }
+    .sm-pvsm { @extend .sm-ptsm; @extend .sm-pbsm; }
+    .sm-phsm { @extend .sm-plsm; @extend .sm-prsm; }
+    .sm-pasm { @extend .sm-pvsm; @extend .sm-phsm; }
+
+    .sm-ptmd { padding-top: $md; }
+    .sm-pbmd { padding-bottom: $md; }
+    .sm-plmd { padding-left: $md; }
+    .sm-prmd { padding-right: $md; }
+    .sm-pvmd { @extend .sm-ptmd; @extend .sm-pbmd; }
+    .sm-phmd { @extend .sm-plmd; @extend .sm-prmd; }
+    .sm-pamd { @extend .sm-pvmd; @extend .sm-phmd; }
+
+    .sm-ptlg { padding-top: $lg; }
+    .sm-pblg { padding-bottom: $lg; }
+    .sm-pllg { padding-left: $lg; }
+    .sm-prlg { padding-right: $lg; }
+    .sm-pvlg { @extend .sm-ptlg; @extend .sm-pblg; }
+    .sm-phlg { @extend .sm-pllg; @extend .sm-prlg; }
+    .sm-palg { @extend .sm-pvlg; @extend .sm-phlg; }
+
+    .sm-ptxl { padding-top: $xl; }
+    .sm-pbxl { padding-bottom: $xl; }
+    .sm-plxl { padding-left: $xl; }
+    .sm-prxl { padding-right: $xl; }
+    .sm-pvxl { @extend .sm-ptxl; @extend .sm-pbxl; }
+    .sm-phxl { @extend .sm-plxl; @extend .sm-prxl; }
+    .sm-paxl { @extend .sm-pvxl; @extend .sm-phxl; }
+
+    .sm-ptxxl { padding-top: $xxl; }
+    .sm-pbxxl { padding-bottom: $xxl; }
+    .sm-plxxl { padding-left: $xxl; }
+    .sm-prxxl { padding-right: $xxl; }
+    .sm-pvxxl { @extend .sm-ptxxl; @extend .sm-pbxxl; }
+    .sm-phxxl { @extend .sm-plxxl; @extend .sm-prxxl; }
+    .sm-paxxl { @extend .sm-pvxxl; @extend .sm-phxxl; }
+
+    .sm-mt0 { margin-top: 0px; }
+    .sm-mb0 { margin-bottom: 0px; }
+    .sm-ml0 { margin-left: 0px; }
+    .sm-mr0 { margin-right: 0px; }
+    .sm-mv0 { @extend .sm-mt0; @extend .sm-mb0; }
+    .sm-mh0 { @extend .sm-ml0; @extend .sm-mr0; }
+    .sm-ma0 { @extend .sm-mv0; @extend .sm-mh0; }
+
+    .sm-mtsm { margin-top: $sm; }
+    .sm-mbsm { margin-bottom: $sm; }
+    .sm-mlsm { margin-left: $sm; }
+    .sm-mrsm { margin-right: $sm; }
+    .sm-mvsm { @extend .sm-mtsm; @extend .sm-mbsm; }
+    .sm-mhsm { @extend .sm-mlsm; @extend .sm-mrsm; }
+    .sm-masm { @extend .sm-mvsm; @extend .sm-mhsm; }
+
+    .sm-mtmd { margin-top: $md; }
+    .sm-mbmd { margin-bottom: $md; }
+    .sm-mlmd { margin-left: $md; }
+    .sm-mrmd { margin-right: $md; }
+    .sm-mvmd { @extend .sm-mtmd; @extend .sm-mbmd; }
+    .sm-mhmd { @extend .sm-mlmd; @extend .sm-mrmd; }
+    .sm-mamd { @extend .sm-mvmd; @extend .sm-mhmd; }
+
+    .sm-mtlg { margin-top: $lg; }
+    .sm-mblg { margin-bottom: $lg; }
+    .sm-mllg { margin-left: $lg; }
+    .sm-mrlg { margin-right: $lg; }
+    .sm-mvlg { @extend .sm-mtlg; @extend .sm-mblg; }
+    .sm-mhlg { @extend .sm-mllg; @extend .sm-mrlg; }
+    .sm-malg { @extend .sm-mvlg; @extend .sm-mhlg; }
+
+    .sm-mtxl { margin-top: $xl; }
+    .sm-mbxl { margin-bottom: $xl; }
+    .sm-mlxl { margin-left: $xl; }
+    .sm-mrxl { margin-right: $xl; }
+    .sm-mvxl { @extend .sm-mtxl; @extend .sm-mbxl; }
+    .sm-mhxl { @extend .sm-mlxl; @extend .sm-mrxl; }
+    .sm-maxl { @extend .sm-mvxl; @extend .sm-mhxl; }
+
+    .sm-mtxxl { margin-top: $xxl; }
+    .sm-mbxxl { margin-bottom: $xxl; }
+    .sm-mlxxl { margin-left: $xxl; }
+    .sm-mrxxl { margin-right: $xxl; }
+    .sm-mvxxl { @extend .sm-mtxxl; @extend .sm-mbxxl; }
+    .sm-mhxxl { @extend .sm-mlxxl; @extend .sm-mrxxl; }
+    .sm-maxxl { @extend .sm-mvxxl; @extend .sm-mhxxl; }
+  }
+
+  // Medium Screen Sizes
+  @media (min-width: $screen-md-min) {
+    .md-pt0 { padding-top: 0px; }
+    .md-pb0 { padding-bottom: 0px; }
+    .md-pl0 { padding-left: 0px; }
+    .md-pr0 { padding-right: 0px; }
+    .md-pv0 { @extend .md-pt0; @extend .md-pb0; }
+    .md-ph0 { @extend .md-pl0; @extend .md-pr0; }
+    .md-pa0 { @extend .md-pv0; @extend .md-ph0; }
+
+    .md-ptsm { padding-top: $sm; }
+    .md-pbsm { padding-bottom: $sm; }
+    .md-plsm { padding-left: $sm; }
+    .md-prsm { padding-right: $sm; }
+    .md-pvsm { @extend .md-ptsm; @extend .md-pbsm; }
+    .md-phsm { @extend .md-plsm; @extend .md-prsm; }
+    .md-pasm { @extend .md-pvsm; @extend .md-phsm; }
+
+    .md-ptmd { padding-top: $md; }
+    .md-pbmd { padding-bottom: $md; }
+    .md-plmd { padding-left: $md; }
+    .md-prmd { padding-right: $md; }
+    .md-pvmd { @extend .md-ptmd; @extend .md-pbmd; }
+    .md-phmd { @extend .md-plmd; @extend .md-prmd; }
+    .md-pamd { @extend .md-pvmd; @extend .md-phmd; }
+
+    .md-ptlg { padding-top: $lg; }
+    .md-pblg { padding-bottom: $lg; }
+    .md-pllg { padding-left: $lg; }
+    .md-prlg { padding-right: $lg; }
+    .md-pvlg { @extend .md-ptlg; @extend .md-pblg; }
+    .md-phlg { @extend .md-pllg; @extend .md-prlg; }
+    .md-palg { @extend .md-pvlg; @extend .md-phlg; }
+
+    .md-ptxl { padding-top: $xl; }
+    .md-pbxl { padding-bottom: $xl; }
+    .md-plxl { padding-left: $xl; }
+    .md-prxl { padding-right: $xl; }
+    .md-pvxl { @extend .md-ptxl; @extend .md-pbxl; }
+    .md-phxl { @extend .md-plxl; @extend .md-prxl; }
+    .md-paxl { @extend .md-pvxl; @extend .md-phxl; }
+
+    .md-ptxxl { padding-top: $xxl; }
+    .md-pbxxl { padding-bottom: $xxl; }
+    .md-plxxl { padding-left: $xxl; }
+    .md-prxxl { padding-right: $xxl; }
+    .md-pvxxl { @extend .md-ptxxl; @extend .md-pbxxl; }
+    .md-phxxl { @extend .md-plxxl; @extend .md-prxxl; }
+    .md-paxxl { @extend .md-pvxxl; @extend .md-phxxl; }
+
+    .md-mt0 { margin-top: 0px; }
+    .md-mb0 { margin-bottom: 0px; }
+    .md-ml0 { margin-left: 0px; }
+    .md-mr0 { margin-right: 0px; }
+    .md-mv0 { @extend .md-mt0; @extend .md-mb0; }
+    .md-mh0 { @extend .md-ml0; @extend .md-mr0; }
+    .md-ma0 { @extend .md-mv0; @extend .md-mh0; }
+
+    .md-mtsm { margin-top: $sm; }
+    .md-mbsm { margin-bottom: $sm; }
+    .md-mlsm { margin-left: $sm; }
+    .md-mrsm { margin-right: $sm; }
+    .md-mvsm { @extend .md-mtsm; @extend .md-mbsm; }
+    .md-mhsm { @extend .md-mlsm; @extend .md-mrsm; }
+    .md-masm { @extend .md-mvsm; @extend .md-mhsm; }
+
+    .md-mtmd { margin-top: $md; }
+    .md-mbmd { margin-bottom: $md; }
+    .md-mlmd { margin-left: $md; }
+    .md-mrmd { margin-right: $md; }
+    .md-mvmd { @extend .md-mtmd; @extend .md-mbmd; }
+    .md-mhmd { @extend .md-mlmd; @extend .md-mrmd; }
+    .md-mamd { @extend .md-mvmd; @extend .md-mhmd; }
+
+    .md-mtlg { margin-top: $lg; }
+    .md-mblg { margin-bottom: $lg; }
+    .md-mllg { margin-left: $lg; }
+    .md-mrlg { margin-right: $lg; }
+    .md-mvlg { @extend .md-mtlg; @extend .md-mblg; }
+    .md-mhlg { @extend .md-mllg; @extend .md-mrlg; }
+    .md-malg { @extend .md-mvlg; @extend .md-mhlg; }
+
+    .md-mtxl { margin-top: $xl; }
+    .md-mbxl { margin-bottom: $xl; }
+    .md-mlxl { margin-left: $xl; }
+    .md-mrxl { margin-right: $xl; }
+    .md-mvxl { @extend .md-mtxl; @extend .md-mbxl; }
+    .md-mhxl { @extend .md-mlxl; @extend .md-mrxl; }
+    .md-maxl { @extend .md-mvxl; @extend .md-mhxl; }
+
+    .md-mtxxl { margin-top: $xxl; }
+    .md-mbxxl { margin-bottom: $xxl; }
+    .md-mlxxl { margin-left: $xxl; }
+    .md-mrxxl { margin-right: $xxl; }
+    .md-mvxxl { @extend .md-mtxxl; @extend .md-mbxxl; }
+    .md-mhxxl { @extend .md-mlxxl; @extend .md-mrxxl; }
+    .md-maxxl { @extend .md-mvxxl; @extend .md-mhxxl; }
+  }
+
+  // Large Screen Sizes
+  @media (min-width: $screen-lg-min) {
+    .lg-pt0 { padding-top: 0px; }
+    .lg-pb0 { padding-bottom: 0px; }
+    .lg-pl0 { padding-left: 0px; }
+    .lg-pr0 { padding-right: 0px; }
+    .lg-pv0 { @extend .lg-pt0; @extend .lg-pb0; }
+    .lg-ph0 { @extend .lg-pl0; @extend .lg-pr0; }
+    .lg-pa0 { @extend .lg-pv0; @extend .lg-ph0; }
+
+    .lg-ptsm { padding-top: $sm; }
+    .lg-pbsm { padding-bottom: $sm; }
+    .lg-plsm { padding-left: $sm; }
+    .lg-prsm { padding-right: $sm; }
+    .lg-pvsm { @extend .lg-ptsm; @extend .lg-pbsm; }
+    .lg-phsm { @extend .lg-plsm; @extend .lg-prsm; }
+    .lg-pasm { @extend .lg-pvsm; @extend .lg-phsm; }
+
+    .lg-ptmd { padding-top: $md; }
+    .lg-pbmd { padding-bottom: $md; }
+    .lg-plmd { padding-left: $md; }
+    .lg-prmd { padding-right: $md; }
+    .lg-pvmd { @extend .lg-ptmd; @extend .lg-pbmd; }
+    .lg-phmd { @extend .lg-plmd; @extend .lg-prmd; }
+    .lg-pamd { @extend .lg-pvmd; @extend .lg-phmd; }
+
+    .lg-ptlg { padding-top: $lg; }
+    .lg-pblg { padding-bottom: $lg; }
+    .lg-pllg { padding-left: $lg; }
+    .lg-prlg { padding-right: $lg; }
+    .lg-pvlg { @extend .lg-ptlg; @extend .lg-pblg; }
+    .lg-phlg { @extend .lg-pllg; @extend .lg-prlg; }
+    .lg-palg { @extend .lg-pvlg; @extend .lg-phlg; }
+
+    .lg-ptxl { padding-top: $xl; }
+    .lg-pbxl { padding-bottom: $xl; }
+    .lg-plxl { padding-left: $xl; }
+    .lg-prxl { padding-right: $xl; }
+    .lg-pvxl { @extend .lg-ptxl; @extend .lg-pbxl; }
+    .lg-phxl { @extend .lg-plxl; @extend .lg-prxl; }
+    .lg-paxl { @extend .lg-pvxl; @extend .lg-phxl; }
+
+    .lg-ptxxl { padding-top: $xxl; }
+    .lg-pbxxl { padding-bottom: $xxl; }
+    .lg-plxxl { padding-left: $xxl; }
+    .lg-prxxl { padding-right: $xxl; }
+    .lg-pvxxl { @extend .lg-ptxxl; @extend .lg-pbxxl; }
+    .lg-phxxl { @extend .lg-plxxl; @extend .lg-prxxl; }
+    .lg-paxxl { @extend .lg-pvxxl; @extend .lg-phxxl; }
+
+    .lg-mt0 { margin-top: 0px; }
+    .lg-mb0 { margin-bottom: 0px; }
+    .lg-ml0 { margin-left: 0px; }
+    .lg-mr0 { margin-right: 0px; }
+    .lg-mv0 { @extend .lg-mt0; @extend .lg-mb0; }
+    .lg-mh0 { @extend .lg-ml0; @extend .lg-mr0; }
+    .lg-ma0 { @extend .lg-mv0; @extend .lg-mh0; }
+
+    .lg-mtsm { margin-top: $sm; }
+    .lg-mbsm { margin-bottom: $sm; }
+    .lg-mlsm { margin-left: $sm; }
+    .lg-mrsm { margin-right: $sm; }
+    .lg-mvsm { @extend .lg-mtsm; @extend .lg-mbsm; }
+    .lg-mhsm { @extend .lg-mlsm; @extend .lg-mrsm; }
+    .lg-masm { @extend .lg-mvsm; @extend .lg-mhsm; }
+
+    .lg-mtmd { margin-top: $md; }
+    .lg-mbmd { margin-bottom: $md; }
+    .lg-mlmd { margin-left: $md; }
+    .lg-mrmd { margin-right: $md; }
+    .lg-mvmd { @extend .lg-mtmd; @extend .lg-mbmd; }
+    .lg-mhmd { @extend .lg-mlmd; @extend .lg-mrmd; }
+    .lg-mamd { @extend .lg-mvmd; @extend .lg-mhmd; }
+
+    .lg-mtlg { margin-top: $lg; }
+    .lg-mblg { margin-bottom: $lg; }
+    .lg-mllg { margin-left: $lg; }
+    .lg-mrlg { margin-right: $lg; }
+    .lg-mvlg { @extend .lg-mtlg; @extend .lg-mblg; }
+    .lg-mhlg { @extend .lg-mllg; @extend .lg-mrlg; }
+    .lg-malg { @extend .lg-mvlg; @extend .lg-mhlg; }
+
+    .lg-mtxl { margin-top: $xl; }
+    .lg-mbxl { margin-bottom: $xl; }
+    .lg-mlxl { margin-left: $xl; }
+    .lg-mrxl { margin-right: $xl; }
+    .lg-mvxl { @extend .lg-mtxl; @extend .lg-mbxl; }
+    .lg-mhxl { @extend .lg-mlxl; @extend .lg-mrxl; }
+    .lg-maxl { @extend .lg-mvxl; @extend .lg-mhxl; }
+
+    .lg-mtxxl { margin-top: $xxl; }
+    .lg-mbxxl { margin-bottom: $xxl; }
+    .lg-mlxxl { margin-left: $xxl; }
+    .lg-mrxxl { margin-right: $xxl; }
+    .lg-mvxxl { @extend .lg-mtxxl; @extend .lg-mbxxl; }
+    .lg-mhxxl { @extend .lg-mlxxl; @extend .lg-mrxxl; }
+    .lg-maxxl { @extend .lg-mvxxl; @extend .lg-mhxxl; }
+  }

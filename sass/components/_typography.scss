@@ -1,0 +1,39 @@
+* {
+  font-family: 'Source Sans Pro', helvetica, arial, sans-serif;
+  font-size: 18px;
+}
+
+.dropcap {
+  font-size: 3em;
+  float: left;
+  margin-top: .2em;
+  line-height: .5em;
+  margin-right: 5px;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+
+  &.entry-title {
+    margin-bottom: .5em;
+  }
+}
+
+p {
+  &.jumbo {
+    font-size: 20px;
+  }
+}

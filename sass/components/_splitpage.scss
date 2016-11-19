@@ -1,0 +1,47 @@
+.splitpage {
+  height: 100%;
+  background-color: $teal;
+
+  .row {
+    height: 100%;
+
+    >div[class^="col-"] {
+      height: 100%;
+
+      // Copy Column
+      &:not(.splitpage__featureimage) {
+        color: white;
+        text-align: center;
+
+        article {
+          padding: 30px;
+
+          .shlogo {
+            width: 400px;
+            max-width: 100%;
+          }
+
+          .entry-content {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .splitpage__featureimage {
+    background-size: cover;
+  }
+
+  @media (max-width: 543px) {
+    .row {
+      >div[class^="col-"] {
+        height: auto;
+
+        &.splitpage__featureimage {
+          height: 300px;
+        }
+      }
+    }
+  }
+}

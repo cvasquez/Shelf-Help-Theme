@@ -1,0 +1,27 @@
+/*
+Theme Name: Shelf Help
+Theme URI: http://shelfhelp.me
+Description: The theme for Liz MacDonald's "Shelf Help" site.
+Version: 0.1
+Author: Chris Vasquez
+Author URI: http://www.clickpopmedia.com
+*/
+
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+//@import "compass/reset";
+@import "vendor/bootstrap";
+@import "components/variables";
+@import "components/utilities";
+@import "components/typography";
+@import "components/splitpage";
+@import "components/borderedpage";
+
+body {
+  position:absolute;
+  height: 100%;
+  width: 100%;
+}
