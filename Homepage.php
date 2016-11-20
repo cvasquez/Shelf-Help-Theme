@@ -25,7 +25,7 @@ get_header(); ?>
 
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4 col-sm-6">
+						<div class="col-sm-5">
 
 							<div class="card xs-mtlg">
 								<div class="card__content">
@@ -49,9 +49,16 @@ get_header(); ?>
 
 						</div>
 
-						<div class="col-md-8 col-sm-6">
-							<div class="embed-responsive embed-responsive-16by9 xs-mtlg">
-								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HtDnU7ylGsk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+						<div class="col-sm-7">
+							<div class="card xs-mtlg">
+								<div class="embed-responsive embed-responsive-16by9 xs-mtlg">
+									<iframe class="embed-responsive-item" src="//www.youtube.com/embed/HtDnU7ylGsk?list=PLTAUuCPhHk0lq-RFHmQq4v6J6hcrGqsUX&amp;wmode=transparent&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;autohide=1&amp;v=<?php the_field('shelfhelp_example_id'); ?>&amp;index=10&amp;autoplay=0" frameborder="0" scrolling="no"></iframe>
+								</div>
+
+								<div class="card__content">
+									<?php the_field('shelfhelp_series_description'); ?>
+								</div>
 							</div>
 						</div>
 					</div>
