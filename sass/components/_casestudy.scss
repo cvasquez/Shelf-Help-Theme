@@ -21,7 +21,7 @@
     width: 33%;
   }
 
-  &:nth-child(odd) {
+  &:nth-child(even) {
     img {
       float: right;
     }
@@ -49,7 +49,7 @@
       right: auto;
     }
 
-    &:nth-child(odd) img {
+    &:nth-child(even) img {
       float: none;
     }
   }

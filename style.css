@@ -8762,11 +8762,11 @@ h2 {
   width: 33%;
 }
 /* line 25, sass/components/_casestudy.scss */
-.case-study:nth-child(odd) img {
+.case-study:nth-child(even) img {
   float: right;
 }
 /* line 29, sass/components/_casestudy.scss */
-.case-study:nth-child(odd) .case-study__content {
+.case-study:nth-child(even) .case-study__content {
   left: 0;
   right: auto;
   box-shadow: #eaeaea 1em 1em 0;
@@ -8787,7 +8787,7 @@ h2 {
     right: auto;
   }
   /* line 52, sass/components/_casestudy.scss */
-  .case-study:nth-child(odd) img {
+  .case-study:nth-child(even) img {
     float: none;
   }
 }
