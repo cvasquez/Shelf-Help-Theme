@@ -1,23 +1,21 @@
-<ul>
-  <li>
-    <a href="<?php echo get_site_url(); ?>/about">Meet Ashley</a>
-  </li>
-  <li>
-    <a href="<?php echo get_site_url(); ?>/services">Services</a>
-  </li>
-  <li>
-    <a href="<?php echo get_site_url(); ?>/vlog">Vlog</a>
-  </li>
-  <li>
-    <a href="<?php echo get_site_url(); ?>/reviews">Reviews</a>
-  </li>
-  <li>
-    <a href="https://ashleymeyers.jhilburn.com/" target="_blank">Men's Fashion</a>
-  </li>
-  <li>
-    <a href="http://etsy.com/shop/smilelulabelle" target="_blank">Shop</a>
-  </li>
-  <li>
-    <a href="<?php echo get_site_url(); ?>/contact">Contact</a>
-  </li>
-</ul>
+<div class="navbar">
+  <div class="navbar__logo">
+    <img src="<?php bloginfo('template_directory');?>/images/logo.jpg" alt="Shelf Help logo" height="51" width="38" />
+  </div>
+  <div class="navbar__link">
+    <a href="<?php echo get_site_url(); ?>/about">Services</a>
+  </div>
+  <div class="navbar__link">
+    <a href="<?php echo get_site_url(); ?>/services">Projects</a>
+  </div>
+  <div class="navbar__link">
+    <a href="<?php echo get_site_url(); ?>/vlog">About</a>
+  </div>
+  <div class="navbar__link">
+    <a href="<?php echo get_site_url(); ?>/reviews">Blog</a>
+  </div>
+  <div class="navbar__spacer"></div>
+  <div class="navbar__link navbar--teal">
+    <a href="<?php echo get_site_url(); ?>/reviews">Contact</a>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+.navbar {
+  align-items: stretch;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  .navbar__logo {
+    padding: 5px;
+  }
+
+  .navbar__spacer {
+    flex: auto;
+  }
+
+  .navbar__link {
+    align-items: center;
+    display: flex;
+    transition-duration: .3s;
+
+    a {
+      box-sizing: border-box;
+      color: $textColor;
+      display: block;
+      padding: 1em;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &:hover {
+      background-color: #f1f1f1;
+    }
+
+    &.navbar--teal {
+      background: $teal-light;
+
+      &:hover {
+        background: $teal;
+      }
+    }
+  }
+}

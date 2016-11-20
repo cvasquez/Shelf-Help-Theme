@@ -4,14 +4,13 @@
   }
 
 // Background Colors
-  .bg-teal { background: $teal; }
-  .bg-teal2 { background: $teal2; }
+  .bg-white { background: white; }
+  .bg-gray01 { background: $gray-01; }
+  .bg-gray02 { background: $gray-02; }
+  .bg-gray03 { background: $gray-03; }
 
 // Text Colors
   .text-white { color: white; }
-  .text-coal { color: #3a3a3a; }
-  .text-teal { color: $teal; }
-  .text-teal2 { color: $teal2; }
 
 // Text Align
   .text-center {

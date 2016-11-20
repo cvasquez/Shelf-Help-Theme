@@ -1,0 +1,12 @@
+.hero {
+  height: 480px;
+  width: 100%;
+
+  &.hero--cover {
+    background-size: cover;
+  }
+
+  &.hero--room {
+    background: url('images/header/room.jpg') center center;
+  }
+}

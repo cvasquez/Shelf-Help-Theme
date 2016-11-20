@@ -410,4 +410,22 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 	return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
+
+// // Add Custom Post type for Projects
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+  register_post_type( 'shelfhelp-project',
+    array(
+      'labels' => array(
+        'name' => __( 'Projects' ),
+        'singular_name' => __( 'Project' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+			'rewrite' => array('slug' => 'our-projects'),
+			'taxonomies'  => array( 'category' ),
+			'supports' => array( 'title', 'editor', 'thumbnail' ),
+    )
+  );
+}
 ?>

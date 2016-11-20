@@ -1,0 +1,56 @@
+.case-study {
+  clear: both;
+
+  .case-study__container {
+    position: relative;
+    clear: both;
+  }
+
+  img {
+    max-width: 80%;
+  }
+
+  .case-study__content {
+    background: white;
+    padding: 2em;
+    box-shadow: $bgColor -1em 1em 0;
+    float: right;
+    position: absolute;
+    top: 1em;
+    right: 0;
+    width: 33%;
+  }
+
+  &:nth-child(odd) {
+    img {
+      float: right;
+    }
+
+    .case-study__content {
+      left: 0;
+      right: auto;
+      box-shadow: $bgColor 1em 1em 0;
+    }
+  }
+}
+
+@media (max-width: $screen-md-min) {
+  .case-study {
+    img {
+      float: none;
+      max-width: 100%;
+    }
+
+    .case-study__content {
+      position: relative;
+      width: 100%;
+      top: 0;
+      left: auto;
+      right: auto;
+    }
+
+    &:nth-child(odd) img {
+      float: none;
+    }
+  }
+}

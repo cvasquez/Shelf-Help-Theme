@@ -17,11 +17,14 @@ Author URI: http://www.clickpopmedia.com
 @import "components/variables";
 @import "components/utilities";
 @import "components/typography";
-@import "components/splitpage";
-@import "components/borderedpage";
+@import "components/hero";
+@import "components/navbar";
+@import "components/card";
+@import "components/casestudy";
 
 body {
   position:absolute;
+  background: $bgColor;
   height: 100%;
   width: 100%;
 }
