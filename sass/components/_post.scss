@@ -1,0 +1,70 @@
+article {
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin-bottom: $textSize*1.6;
+  }
+
+  a {
+    color: $teal;
+  }
+
+  .post__hero {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .avatar {
+    border-radius: 200px;
+  }
+}
+
+
+// Comments
+.comments-area {
+  margin-top: 2em;
+}
+
+.comment-form {
+  label {
+    display: block;
+  }
+
+  input[type="text"],
+  textarea {
+    max-width: 100%;
+    width: 100%;
+    border-color: $gray-04;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+  }
+}
+
+.comment-list {
+  margin: 0;
+  padding: 0;
+
+  li {
+    border-bottom: 1px solid $gray-04;
+    list-style: none;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+  }
+
+  .comment-meta {
+    margin-bottom: 1em;
+
+    > div {
+      display: inline-block;
+    }
+  }
+}

@@ -22,8 +22,10 @@
       box-sizing: border-box;
       color: $textColor;
       display: block;
-      padding: 1em;
       font-weight: bold;
+      font-size: $textSize * 0.75;
+      padding: 1em;
+      text-transform: uppercase;
 
       &:hover {
         text-decoration: none;

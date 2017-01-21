@@ -27,11 +27,11 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="container-fluid bg-gray03 xs-ptlg xs-pbxl">
+<div class="container-fluid bg-gray03 xs-ptsm sm-ptlg xs-pbxl">
 	<div class="row">
 		<div class="col-sm-12">
 
-			<div class="container">
+			<div class="container xs-pa0">
 
 				<?php if ( have_posts() ) : ?>
 
@@ -48,7 +48,7 @@ get_header(); ?>
 					while ( have_posts() ) : the_post();
 					?>
 
-					<div class="case-study xs-mtxl">
+					<div class="case-study xs-mtlg xs-mblg sm-mbxl">
 						<div class="case-study__container">
 							<img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid" />
 

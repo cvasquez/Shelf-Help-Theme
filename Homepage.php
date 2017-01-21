@@ -2,12 +2,31 @@
 /**
  * Template Name: Homepage
  * @package WordPress
- * @subpackage ShelfHelp
+ * @subpackage Shelf_Help
  */
 
 get_header(); ?>
 
-	<div class="hero hero--cover hero--room"></div>
+<!-- Services Modal -->
+	<div class="modal fade" id="servicesModal" tabindex="-1" role="dialog" aria-labelledby="servicesModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/HbkJwbWvhLM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+	    </div>
+	  </div>
+	</div>
+<!-- END Services Modal -->
+
+	<div class="hero hero--room hero--cover">
+		<div class="hero__content text-center xs-pvlg xs-phsm sm-pvxxl sm-phmd">
+			<h1 class="embiggen text-white">Shelf<br>Help.</h1>
+			<a class="playBtn" data-toggle="modal" data-target="#servicesModal">
+				<div class="playBtn__icon"></div>
+			</a>
+		</div>
+	</div>
 
 	<div class="full-width bg-white">
 		<div class="container">
@@ -19,11 +38,11 @@ get_header(); ?>
 		</div>
 	</div>
 
-	<div class="container-fluid bg-gray03 xs-ptlg xs-pbxl">
+	<div class="container-fluid bg-gray03 xs-ptsm sm-ptlg xs-pbxl">
 		<div class="row">
 			<div class="col-sm-12">
 
-				<div class="container">
+				<div class="container xs-pa0">
 					<div class="row">
 						<div class="col-sm-5">
 
@@ -69,7 +88,14 @@ get_header(); ?>
 						</div>
 					</div>
 
-					<?php $loop = new WP_Query( array( 'post_type' => 'shelfhelp-project', 'posts_per_page' => 3 ) ); ?>
+					<?php $loop = new WP_Query( array(
+						'post_type' 			=> 'shelfhelp-project',
+						'posts_per_page' 	=> 5,
+						'meta_key'				=> 'project_order',
+						'orderby'					=> 'meta_value_num',
+						'order'						=> 'ASC'
+						)
+					); ?>
 					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 						<div class="case-study xs-mtlg">
 							<div class="case-study__container">

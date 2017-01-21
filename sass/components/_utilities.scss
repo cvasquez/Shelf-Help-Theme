@@ -67,6 +67,14 @@
   .xs-phxxl { @extend .xs-plxxl; @extend .xs-prxxl; }
   .xs-paxxl { @extend .xs-pvxxl; @extend .xs-phxxl; }
 
+  .xs-ptxxxl { padding-top: $xxxl; }
+  .xs-pbxxxl { padding-bottom: $xxxl; }
+  .xs-plxxxl { padding-left: $xxxl; }
+  .xs-prxxxl { padding-right: $xxxl; }
+  .xs-pvxxxl { @extend .xs-ptxxxl; @extend .xs-pbxxxl; }
+  .xs-phxxxl { @extend .xs-plxxxl; @extend .xs-prxxxl; }
+  .xs-paxxxl { @extend .xs-pvxxxl; @extend .xs-phxxxl; }
+
   .xs-mt0 { margin-top: 0px; }
   .xs-mb0 { margin-bottom: 0px; }
   .xs-ml0 { margin-left: 0px; }
@@ -164,6 +172,14 @@
     .sm-pvxxl { @extend .sm-ptxxl; @extend .sm-pbxxl; }
     .sm-phxxl { @extend .sm-plxxl; @extend .sm-prxxl; }
     .sm-paxxl { @extend .sm-pvxxl; @extend .sm-phxxl; }
+
+    .sm-ptxxxl { padding-top: $xxxl; }
+    .sm-pbxxxl { padding-bottom: $xxxl; }
+    .sm-plxxxl { padding-left: $xxxl; }
+    .sm-prxxxl { padding-right: $xxxl; }
+    .sm-pvxxxl { @extend .sm-ptxxxl; @extend .sm-pbxxxl; }
+    .sm-phxxxl { @extend .sm-plxxxl; @extend .sm-prxxxl; }
+    .sm-paxxxl { @extend .sm-pvxxxl; @extend .sm-phxxxl; }
 
     .sm-mt0 { margin-top: 0px; }
     .sm-mb0 { margin-bottom: 0px; }

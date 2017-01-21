@@ -28,14 +28,14 @@
 <body <?php body_class(); ?>>
 
 	<!-- Facebook Like button code -->
-	<div id="fb-root"></div>
+	<!-- <div id="fb-root"></div>
 	<script>(function(d, s, id) {
 		var js, fjs = d.getElementsByTagName(s)[0];
 		if (d.getElementById(id)) return;
 		js = d.createElement(s); js.id = id;
 		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=387049161469695";
 		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+	}(document, 'script', 'facebook-jssdk'));</script> -->
 
 	<!-- YouTube Subscribe button code -->
-	<script src="https://apis.google.com/js/platform.js"></script>
+	<!-- <script src="https://apis.google.com/js/platform.js"></script> -->

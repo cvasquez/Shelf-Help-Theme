@@ -1,12 +1,43 @@
 .hero {
-  height: 480px;
   width: 100%;
 
-  &.hero--cover {
-    background-size: cover;
+  .hero__content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: rgba(0,0,0,.7) 0px 2px 15px;
   }
 
   &.hero--room {
     background: url('images/header/room.jpg') center center;
+  }
+
+  &.hero--cover {
+    background-size: cover;
+  }
+}
+
+.playBtn {
+  border: 3px solid white;
+  border-radius: 200px;
+  box-shadow: rgba(0,0,0,.3) 0px 2px 10px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 1em;
+  transition-duration: .5s;
+
+  &:hover {
+    background: rgba(#F4C551,0.7);
+  }
+
+  .playBtn__icon {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 20px;
+    border-left-color: white;
+    box-shadow: rgba(0,0,0,.3) 0px 2px 10px;
+    height: 40px;
+    margin: 12px 0 12px 25px;
+    transition-duration: .5s;
+    width: 40px;
   }
 }

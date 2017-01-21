@@ -3,27 +3,20 @@
  * The template part for displaying content
  *
  * @package WordPress
- * @subpackage Lula_Belle
- * @since Lula Belle 1.0
+ * @subpackage Shelf_Help
+ * @since Shelf Help 1.0
  */
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-	</header><!-- .entry-header -->
-
-	<?php if(get_field("video_embed")) { ?>
-
-		<div class="embedContainer">
-			<?php echo get_field("video_embed") ?>
-		</div>
-
-	<? } elseif (get_the_post_thumbnail()) { ?>
-		<div class="postThumbContainer">
-			<?php the_post_thumbnail(); ?>
-		</div>
+<article class="card xs-mtlg" id="post-<?php the_ID(); ?>">
+	<?php if ( has_post_thumbnail() ) { ?>
+		<a href="<?php the_permalink(); ?>">
+			<img src="<?php the_post_thumbnail_url(); ?>" class="post__hero" />
+		</a>
 	<?php } ?>
+	<div class="card__content">
+		<a href="<?php the_permalink(); ?>"><h2>
+			<?php the_title(); ?>
+		</h2></a>
 
 	<?php twentysixteen_excerpt(); ?>
 
@@ -47,6 +40,7 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php echo get_avatar( $post->post_author, 49 ); ?> Written by <?php the_author(); ?> on <?php the_date(); ?>
+		<?php //echo get_avatar( $post->post_author, 49 ); ?> Written by <?php the_author(); ?> on <?php the_date(); ?>
 	</footer><!-- .entry-footer -->
+	</div>
 </article><!-- #post-## -->
